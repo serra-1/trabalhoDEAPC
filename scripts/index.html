@@ -41,7 +41,45 @@
         .container {
             display: flex;
             flex-wrap: wrap;
-            gap
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .block {
+            width: 45%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🏡 Imobiliária Premium</div>
+        <a href="#" class="login">Login</a>
+    </header>
+
+    <section class="search-bar">
+        <input type="text" placeholder="Pesquise por imóveis...">
     </section>
+
+    <div class="container">
+        <div class="block">
+            <h2>Imóveis</h2>
+            <p>Descubra as melhores opções de casas e apartamentos.</p>
+        </div>
+        <div class="block">
+            <h2>Apresentação</h2>
+            <p>Saiba mais sobre nossa empresa e nossa missão.</p>
+        </div>
+        <div class="block">
+            <h2>Serviços</h2>
+            <p>Oferecemos consultoria imobiliária, financiamento e muito mais.</p>
+        </div>
+        <div class="block">
+            <h2>Contactos</h2>
+            <p>Entre em contato conosco para dúvidas ou informações.</p>
+        </div>
+    </div>
 </body>
 </html>

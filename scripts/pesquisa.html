@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Imóveis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pesquisa de Imóveis</h1>
+        <form action="resultado.html" method="GET">
+            <label for="localizacao">Localização:</label>
+            <input type="text" id="localizacao" name="localizacao" placeholder="Cidade ou bairro" required>
+
+            <label for="preco">Preço máximo:</label>
+            <input type="number" id="preco" name="preco" placeholder="€" required>
+
+            <label for="tipo">Tipo de imóvel:</label>
+            <select id="tipo" name="tipo">
+                <option value="apartamento">Apartamento</option>
+                <option value="casa">Casa</option>
+                <option value="terreno">Terreno</option>
+                <option value="comercial">Comercial</option>
+            </select>
+
+            <label for="quartos">Número de quartos:</label>
+            <input type="number" id="quartos" name="quartos" min="1" max="10">
+
+            <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+</body>
+</html>

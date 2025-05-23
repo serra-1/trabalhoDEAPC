@@ -1,0 +1,246 @@
+commit e4308252a3726071cd2f3a19775ae095c0c72cc8
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 23:24:09 2025 +0100
+
+    Update contactos.html
+
+commit ea78373acc3174b11815a73c18ac3e5cbac64131
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 23:22:05 2025 +0100
+
+    Update pesquisa.html
+
+commit a02709ffc1b410c80189342c31b45c1c843c9482
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 23:21:35 2025 +0100
+
+    Update registo.html
+
+commit eecc1d06a0b2fe3c586ddd9e3d5fc9a7794012af
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 23:21:03 2025 +0100
+
+     descricao.html
+
+commit a5f5bb8bed7a95ed354ec7f6ad143401884e07ba
+Author: Duarte Serra <duartemserra1@gmail.com>
+Date:   Fri May 23 23:19:26 2025 +0100
+
+    Update
+
+commit e78e4ce4f2f0c964e03ed509ac4d8a1998cd713b
+Merge: acb50b4 2e6133d
+Author: Duarte Serra <duartemserra1@gmail.com>
+Date:   Fri May 23 23:16:03 2025 +0100
+
+    Merge branch 'main' of https://github.com/serra-1/trabalhoDEAPC
+
+commit 2e6133d004c991072225944cff6201324bb38d27
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 23:13:41 2025 +0100
+
+     styles.css
+
+commit 400f088816873976a0f917290cc8914e61055ea2
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 23:12:40 2025 +0100
+
+    registo.html
+
+commit 57ee319b729e99b5751c5ae01fdcfb321ddd5806
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 23:05:45 2025 +0100
+
+    Update registo.html
+
+commit 9bc86d635608b9d4158ecfd9d438cc5dbf106cb5
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 23:03:06 2025 +0100
+
+    Update registo.html
+
+commit 2652fa195f2991164aa0705ee4cdb1c6aa027f4e
+Author: serra-1 <duartemserra1@gmail.com>
+Date:   Fri May 23 22:57:40 2025 +0100
+
+    Update registo.html
+
+commit 43b0c34c13fe7011e3279a2647d51a0d718b9fa2
+Author: serra-1 <duartemserra1@gmail.com>
+Date:   Fri May 23 22:57:29 2025 +0100
+
+    Create registo.html
+
+commit be9fd774da519e6f145b94878a1d0de367a3b288
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 22:55:11 2025 +0100
+
+    contactos.html
+
+commit 83629b026707734ed1b45dc9f7aa5a462d86e507
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:45:36 2025 +0100
+
+    Update contactos.html
+
+commit 3cac2a4862b3f51adbd68e092fe0cce6e45958db
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:41:10 2025 +0100
+
+    Update contactos.html
+
+commit 01c92346424f02e71881522bd76abca17705cb2c
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:40:59 2025 +0100
+
+    Create contactos.html
+
+commit e05bda02fa6bc731246aad82fbcd480619f9d387
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:37:26 2025 +0100
+
+    Update descricao.html
+
+commit 51bce14ae171f5d8ef30eb318a7768b75a172c5a
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:33:47 2025 +0100
+
+    Update descricao.html
+
+commit 0eb8133a702b49fb4c9d138483251c74a5376857
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:32:14 2025 +0100
+
+    Update styles.css
+
+commit 25c579593f9e98770c850d172638d7ad5fde151a
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:30:11 2025 +0100
+
+    Update styles.css
+
+commit d8e1429512e17947d9ecfd602ceb0417b397f08d
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:27:38 2025 +0100
+
+    Update pesquisa.html
+
+commit 05230523c11f2c0e46c135ac6ceeb00a10552f44
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:25:52 2025 +0100
+
+    Create descricao.html
+
+commit d854af86fe0e9528f12ace24a3a0b26f0434e1bb
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:23:49 2025 +0100
+
+    Create pesquisa.html
+
+commit 1d8e17627af1c5d0317e532f385b40fa6ed72352
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 22:21:13 2025 +0100
+
+    Update index.html
+
+commit 1dbc86a67994fcf6d003ee57eba58e7e960cdf73
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:17:35 2025 +0100
+
+    Update styles.css
+
+commit db5dab21c9a9c6cd8675fd221ec8b26ccc5abf1b
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:13:13 2025 +0100
+
+    Update index.html
+
+commit 187afb5316d64f967b5fc1f210f38340f55bffa4
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:10:52 2025 +0100
+
+    Update index.html
+
+commit 9d7cccf2f5e41b2221507a474d11e578ca1b6ed2
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 22:07:30 2025 +0100
+
+    Update styles.css
+
+commit 5c7d7801a5572ad22311dacf184c52bed537c348
+Author: serra-1 <duartemserra1@gmail.com>
+Date:   Fri May 23 22:06:53 2025 +0100
+
+    Add files via upload
+
+commit acb50b454a161ee1aedd828442d61da16bdd0a99
+Author: Duarte Serra <duartemserra1@gmail.com>
+Date:   Fri May 23 22:05:46 2025 +0100
+
+    CSS
+
+commit df125fe99027ad8a92d09cbc284b16ce41a5ee4d
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 21:57:27 2025 +0100
+
+    Update index.html
+
+commit 0307d0c175725fa5871f0f10ab34fdc67a4d887b
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 21:55:51 2025 +0100
+
+    Update index.html
+
+commit bdd2fd677c5add4de40582af60865f6c6e9f9c7d
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 23 21:47:16 2025 +0100
+
+    Create index.html
+
+commit d41753974f8e80c3deb38ce0527ca2c2fd179c21
+Author: Duarte Serra <duartemserra1@gmail.com>
+Date:   Fri May 23 21:45:31 2025 +0100
+
+    Tentative 23/05
+
+commit 9aa5474c4bb7a4171655d8dea80b41f209eabda7
+Author: serra-1 <duartemserra1@gmail.com>
+Date:   Fri May 23 21:32:48 2025 +0100
+
+    Delete images
+
+commit 559934520b483405c0445f60a537c8f916b3c9ab
+Author: serra-1 <duartemserra1@gmail.com>
+Date:   Fri May 23 21:32:12 2025 +0100
+
+    Delete scripts
+
+commit c8192d5703e20ba5eee19ed74f9a8b6b95d29b3a
+Author: serra-1 <duartemserra1@gmail.com>
+Date:   Fri May 23 21:27:31 2025 +0100
+
+    test
+
+commit f7cc25e225b5834fcafcfb01a3db2e7bff7d0f39
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 21:26:43 2025 +0100
+
+    Create scripts
+
+commit 022b0e3df8a04f6831dbadb83c1b4ad313f9d248
+Author: guilherme1241204 <1241204@isep.ipp.pt>
+Date:   Fri May 23 21:26:02 2025 +0100
+
+    Create images
+
+commit 104e51ddc70c2c4d6595c0de4f879a8a838c394f
+Author: PedroMarinho999 <pedro.e.marinho@gmail.com>
+Date:   Fri May 16 23:11:25 2025 +0100
+
+    Add files via upload
+
+commit 979a6b771d402b3905c2635abb54d7d77f47f7f7
+Author: serra-1 <duartemserra1@gmail.com>
+Date:   Fri May 16 21:11:48 2025 +0100
+
+    Initial commit

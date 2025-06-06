@@ -1,39 +1,37 @@
-<!DOCTYPE html>
-
-<html>
-	<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registo - Imobiliária</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-	<body>
-	<header>
+<body>
+    <header>
         <div class="logo">🏡 Imobiliária Premium</div>
-        
     </header>
-	<div class="block">
-		<h1>Reiste-se aqui no nosso Site!</h1>
-		<form action="/action_page.php" method="get">
-			<div class="linha">
-				<label for="fname">First name:</label>
-				<input type="text" id="fname" name="fname">
-				<label for="lname">Last name:</label>
-				<input type="text" id="lname" name="lname"><br><br>
-			</div>
-			<label for="dataN">Data de nascimento:</label>
-			<input type="date" id="dataN" name="dataN"><br><br>
-			<div class="linha">
-				<label for="nTele">Nº telemóvel:</label>
-				<input type="tel" id="nTele" name="nTele">
-				<label for="mail">Email:</label>
-				<input type="email" id="mail" name="mail"><br><br>
-			</div>
-			<label for="morada">Morada:</label>
-			<input type="text" id="morada" name="morada"><br><br>
-			<input type="reset" value="Limpar dados">
-			<input type="submit" value="Submeter">
-		</form>
-		</div>
-	</body>
-</html> 
+    <div class="block">
+        <h1>Registe-se aqui no nosso Site!</h1>
+        <form action="/action_page.php" method="get">
+            <div class="linha">
+                <label for="fname">Primeiro nome:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Último nome:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </div>
+            <label for="dataN">Data de nascimento:</label>
+            <input type="date" id="dataN" name="dataN"><br><br>
+            <div class="linha">
+                <label for="nTele">Nº telemóvel:</label>
+                <input type="tel" id="nTele" name="nTele">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail"><br><br>
+            </div>
+            <label for="morada">Morada:</label>
+            <input type="text" id="morada" name="morada"><br><br>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password">
+            <p class="password-hint">A senha deve ter pelo menos 6 caracteres, incluindo uma maiúscula, um número e um caractere especial.</p><br>
+
+            <label for="confirmPassword">Confirmar senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+            <input type="reset" value="Limpar dados">
+            <input type="submit" value="Submeter">
+        </form>
+    </div>
+</body>
+</html>

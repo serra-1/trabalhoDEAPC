@@ -1,39 +1,119 @@
 <!DOCTYPE html>
-
-<html>
-	<head>
+<html lang="pt">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registo - Imobiliária</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .invalid {
+            border: 2px solid red;
+            background-color: #ffcccc;
+        }
+        .password-hint {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+
+            form.addEventListener("submit", function (event) {
+                let isValid = true;
+
+                function validateField(field, pattern, errorMessage) {
+                    if (!field.value.match(pattern)) {
+                        field.classList.add("invalid");
+                        alert(errorMessage);
+                        isValid = false;
+                    } else {
+                        field.classList.remove("invalid");
+                    }
+                }
+
+                const fname = document.getElementById("fname");
+                validateField(fname, /^[a-zA-Z]{2,}$/, "O primeiro nome deve conter apenas letras e ter pelo menos 2 caracteres.");
+
+                const lname = document.getElementById("lname");
+                validateField(lname, /^[a-zA-Z]{2,}$/, "O último nome deve conter apenas letras e ter pelo menos 2 caracteres.");
+
+                const phone = document.getElementById("nTele");
+                validateField(phone, /^\d{9}$/, "O número de telefone deve conter exatamente 9 dígitos.");
+
+                const email = document.getElementById("mail");
+                validateField(email, /^\S+@\S+\.\S+$/, "Por favor, insira um e-mail válido.");
+
+                const birthdate = document.getElementById("dataN");
+                if (!birthdate.value) {
+                    birthdate.classList.add("invalid");
+                    alert("Por favor, insira sua data de nascimento.");
+                    isValid = false;
+                } else {
+                    birthdate.classList.remove("invalid");
+                }
+
+                const password = document.getElementById("password");
+                const confirmPassword = document.getElementById("confirmPassword");
+                const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+
+                if (!password.value.match(passwordPattern)) {
+                    password.classList.add("invalid");
+                    alert("A senha deve ter pelo menos 6 caracteres, incluindo uma maiúscula, um número e um caractere especial.");
+                    isValid = false;
+                } else {
+                    password.classList.remove("invalid");
+                }
+
+                if (password.value !== confirmPassword.value) {
+                    confirmPassword.classList.add("invalid");
+                    alert("As senhas não coincidem.");
+                    isValid = false;
+                } else {
+                    confirmPassword.classList.remove("invalid");
+                }
+
+                if (!isValid) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
 </head>
-	<body>
-	<header>
+<body>
+    <header>
         <div class="logo">🏡 Imobiliária Premium</div>
-        
     </header>
-	<div class="block">
-		<h1>Reiste-se aqui no nosso Site!</h1>
-		<form action="/action_page.php" method="get">
-			<div class="linha">
-				<label for="fname">First name:</label>
-				<input type="text" id="fname" name="fname">
-				<label for="lname">Last name:</label>
-				<input type="text" id="lname" name="lname"><br><br>
-			</div>
-			<label for="dataN">Data de nascimento:</label>
-			<input type="date" id="dataN" name="dataN"><br><br>
-			<div class="linha">
-				<label for="nTele">Nº telemóvel:</label>
-				<input type="tel" id="nTele" name="nTele">
-				<label for="mail">Email:</label>
-				<input type="email" id="mail" name="mail"><br><br>
-			</div>
-			<label for="morada">Morada:</label>
-			<input type="text" id="morada" name="morada"><br><br>
-			<input type="reset" value="Limpar dados">
-			<input type="submit" value="Submeter">
-		</form>
-		</div>
-	</body>
-</html> 
+    <div class="block">
+        <h1>Registe-se aqui no nosso Site!</h1>
+        <form action="/action_page.php" method="get">
+            <div class="linha">
+                <label for="fname">Primeiro nome:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Último nome:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </div>
+            <label for="dataN">Data de nascimento:</label>
+            <input type="date" id="dataN" name="dataN"><br><br>
+            <div class="linha">
+                <label for="nTele">Nº telemóvel:</label>
+                <input type="tel" id="nTele" name="nTele">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail"><br><br>
+            </div>
+            <label for="morada">Morada:</label>
+            <input type="text" id="morada" name="morada"><br><br>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password">
+            <p class="password-hint">A senha deve ter pelo menos 6 caracteres, incluindo uma maiúscula, um número e um caractere especial.</p><br>
+
+            <label for="confirmPassword">Confirmar senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+            <input type="reset" value="Limpar dados">
+            <input type="submit" value="Submeter">
+        </form>
+    </div>
+</body>
+</html>

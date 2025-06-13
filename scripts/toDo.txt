@@ -1,0 +1,8 @@
+Linkar paginas html entre si
+Linkar registo DB a pagina html
+Linkar imoveis DB para vizualizar no html
+Criar o login ao lado do registo (na msm pagina)
+
+embelezar as paginas:
+- imagens
+- files css

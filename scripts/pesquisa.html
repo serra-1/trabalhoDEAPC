@@ -3,66 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa de Imóveis Interativa</title>
+    <title>Pesquisa de Imóveis</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API&callback=iniciarMapa" async defer></script>
+    <style>
+        .imovel {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
 <header>
-        <div class="logo"> 
-    <a href="http://localhost/trabalhoDEAPC/scripts/index.html" class="logo" >🏡</a>
-     Imobiliária Premium</div>
-        <a href="http://localhost/trabalhoDEAPC/scripts/registo.html" class="login">Login</a>
-    </header>
-    <div class="container">
-        <h1>Pesquisa Interativa de Imóveis</h1>
-        <form id="form-pesquisa">
-            <label for="localizacao">Localização:</label>
-            <input type="text" id="localizacao" name="localizacao" placeholder="Cidade ou bairro" required>
-
-            <div id="mapa"></div>
-
-            <label for="preco">Preço máximo:</label>
-            <input type="range" id="preco" name="preco" min="50000" max="1000000" step="5000" oninput="atualizarValorPreco(this.value)">
-            <span id="valorPreco">50000 €</span>
-
-            <label for="tipo">Tipo de imóvel:</label>
-            <select id="tipo" name="tipo">
-                <option value="apartamento">Apartamento</option>
-                <option value="casa">Casa</option>
-                <option value="terreno">Terreno</option>
-                <option value="comercial">Comercial</option>
-            </select>
-
-            <label for="quartos">Número de quartos:</label>
-            <input type="number" id="quartos" name="quartos" min="1" max="10">
-
-            <button type="submit">Pesquisar</button>
-        </form>
-
-        <div id="resultados" class="resultados-container"></div>
+    <div class="logo"> 
+        <a href="index.html" class="logo">🏡</a>
+        Imobiliária Premium
     </div>
+    <a href="registo.html" class="login">Login</a>
+</header>
 
-    <script>
-        function atualizarValorPreco(valor) {
-            document.getElementById('valorPreco').textContent = valor + ' €';
-        }
+<div class="container">
+    <h1>Pesquisa de Imóveis</h1>
+    <form id="form-pesquisa">
+        <label for="localizacao">Localização:</label>
+        <input type="text" id="localizacao" name="localizacao" placeholder="Cidade ou bairro" required>
 
-        function iniciarMapa() {
-            var mapa = new google.maps.Map(document.getElementById("mapa"), {
-                center: { lat: 38.7169, lng: -9.1399 }, // Lisboa como padrão
-                zoom: 12
-            });
+        <label for="preco">Preço máximo:</label>
+        <input type="range" id="preco" name="preco" min="50000" max="1000000" step="5000" oninput="atualizarValorPreco(this.value)">
+        <span id="valorPreco">50000 €</span>
 
-            mapa.addListener("click", function(event) {
-                document.getElementById("localizacao").value = event.latLng.lat() + ", " + event.latLng.lng();
-            });
-        }
+        <label for="tipo">Tipo de imóvel:</label>
+        <select id="tipo" name="tipo">
+            <option value="apartamento">Apartamento</option>
+            <option value="casa">Casa</option>
+            <option value="terreno">Terreno</option>
+            <option value="comercial">Comercial</option>
+        </select>
 
-        document.getElementById("form-pesquisa").addEventListener("submit", function(event) {
-            event.preventDefault();
-            document.getElementById("resultados").innerHTML = "<p>Exibindo resultados...</p>";
+        <label for="quartos">Número de quartos:</label>
+        <input type="number" id="quartos" name="quartos" min="0" max="10">
+
+        <button type="submit">Pesquisar</button>
+    </form>
+
+    <div id="resultados" class="resultados-container"></div>
+</div>
+
+<script>
+    function atualizarValorPreco(valor) {
+        document.getElementById('valorPreco').textContent = valor + ' €';
+    }
+
+    document.getElementById("form-pesquisa").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);
+
+        fetch("pesquisar_imoveis.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            const resultados = document.getElementById("resultados");
+            resultados.innerHTML = "";
+
+            const imoveis = data.imoveis ?? [];
+
+            if (imoveis.length === 0) {
+                resultados.innerHTML = "<p>Nenhum imóvel encontrado.</p>";
+            } else {
+                imoveis.forEach(imovel => {
+                    const div = document.createElement("div");
+                    div.classList.add("imovel");
+                    div.innerHTML = `
+                        <h3>${imovel.tipo.toUpperCase()} em ${imovel.localizacao}</h3>
+                        <p><strong>Preço:</strong> ${imovel.preco} €</p>
+                        <p><strong>Quartos:</strong> ${imovel.quartos}</p>
+                        <p>${imovel.descricao}</p>
+                    `;
+                    resultados.appendChild(div);
+                });
+            }
+        })
+        .catch(error => {
+            console.error("Erro na pesquisa:", error);
         });
-    </script>
+    });
+</script>
 </body>
 </html>

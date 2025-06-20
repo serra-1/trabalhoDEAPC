@@ -5,4 +5,4 @@ Criar o login ao lado do registo (na msm pagina)
 
 embelezar as paginas:
 - imagens - ok
-- files css - ok
+- files css - ok. 

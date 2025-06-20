@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -56,11 +55,13 @@
 
                 const password = document.getElementById("password");
                 const confirmPassword = document.getElementById("confirmPassword");
-                const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+
+                // Regex atualizada: inclui minúscula, maiúscula, número e caractere especial
+                const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.,\-_:;]).{6,}$/;
 
                 if (!password.value.match(passwordPattern)) {
                     password.classList.add("invalid");
-                    alert("A senha deve ter pelo menos 6 caracteres, incluindo uma maiúscula, um número e um caractere especial.");
+                    alert("A senha deve ter pelo menos 6 caracteres, incluindo uma minúscula, uma maiúscula, um número e um caractere especial.");
                     isValid = false;
                 } else {
                     password.classList.remove("invalid");
@@ -84,35 +85,38 @@
 
 <body>
     <header>
-     <div class="logo"> 
-    <a href="http://localhost/trabalhoDEAPC/scripts/index.html" class="logo" >🏡</a>
-     Imobiliária Premium</div>
-        
-        
+        <div class="logo">
+            <a href="http://localhost/trabalhoDEAPC/scripts/index.html" class="logo">🏡</a>
+            Imobiliária Premium
+        </div>
     </header>
+
     <div class="block">
         <h1>Registe-se aqui no nosso Site!</h1>
-        <form action="/action_page.php" method="get">
+        <form action="registo_recebe.php" method="post">
             <div class="linha">
                 <label for="fname">Primeiro nome:</label>
                 <input type="text" id="fname" name="fname">
                 <label for="lname">Último nome:</label>
                 <input type="text" id="lname" name="lname"><br><br>
             </div>
+
             <label for="dataN">Data de nascimento:</label>
             <input type="date" id="dataN" name="dataN"><br><br>
+
             <div class="linha">
                 <label for="nTele">Nº telemóvel:</label>
                 <input type="tel" id="nTele" name="nTele">
                 <label for="mail">Email:</label>
                 <input type="email" id="mail" name="mail"><br><br>
             </div>
+
             <label for="morada">Morada:</label>
             <input type="text" id="morada" name="morada"><br><br>
 
             <label for="password">Senha:</label>
             <input type="password" id="password" name="password">
-            <p class="password-hint">A senha deve ter pelo menos 6 caracteres, incluindo uma maiúscula, um número e um caractere especial.</p><br>
+            <p class="password-hint">A senha deve ter pelo menos 6 caracteres, incluindo uma minúscula, uma maiúscula, um número e um caractere especial.</p><br>
 
             <label for="confirmPassword">Confirmar senha:</label>
             <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
@@ -123,5 +127,3 @@
     </div>
 </body>
 </html>
-</html>
-

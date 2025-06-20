@@ -102,6 +102,13 @@ header {
     box-shadow: 2px 2px 8px rgba(93, 95, 96, 0.5);
 }
 
+.imovelText {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    
+    }
+
 /* Responsividade */
 @media (max-width: 768px) {
     .container {

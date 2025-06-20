@@ -1,12 +1,19 @@
 /* Estilos gerais */
 body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url('Ponte_final.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: black;
 }
 linha {
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: bold;
     
@@ -26,6 +33,12 @@ header {
     color: white;
     font-size: 20px;
     font-weight: bold;
+}
+
+.selector {
+    color: goldenrod;
+    font-size: 30px;
+    
 }
 
 .login {
@@ -66,12 +79,20 @@ header {
 .block {
     width: 45%;
     padding: 20px;
-    border: 1px solid #ddd;
-    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.0);
     text-align: center;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.block1 {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.0);
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(93, 95, 96, 0.5);
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .container {

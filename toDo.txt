@@ -4,5 +4,5 @@ Linkar imoveis html PHP db para vizualizar no html
 Criar o login ao lado do registo (na msm pagina)
 
 embelezar as paginas:
-- imagens
+- imagens - ok
 - files css - ok
